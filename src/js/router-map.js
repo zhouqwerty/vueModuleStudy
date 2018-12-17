@@ -15,56 +15,29 @@ var routes = [
         path: "/header",
         component:{template:''}
     },
-    /*{
-        path: "/project",
+    {
+        path: "/body",
         component: {template:''},
-        redirect : "/project/task",
-        children: [
+        redirect : "/body/body1",
+        /*children: [
             {
-                path: "/project/task",
+                path: "/body/body1",
                 component: {template:''}
             },
             {
-			    path: "/project/taskcreate",
-			    component: {template:''}
-			},
-            {
-                path: '/project/taskdetail',
+                path: "/body/body2",
                 component: {template:''}
             },
-            {
-                path: '/project/edittask',
-                component: {template:''}
-            },
-            {
-                path: '/project/effort',
-                component: {template:''}
-            },
-            {
-                path: "/project/team",
-                component: {template:''}
-            }, {
-                path: "/project/team/tManage",
-                component: {template:''}
-            },
-            {
-                path: "/project/mod",
-                component: {template:''}
-            },
-            {
-                path: "/project/empty",
-                component: {template:''}
-            },
-            {
-                path: "/project/projectDetail",
-                component: {template:''}
-            },
-            {
-                path: "/project/createProject",
-                component: {template:''}
-            }
-        ]
-    },*/
+        ]*/
+    },
+    {
+        path: "/body/body1",
+        component: {template:''}
+    },
+    {
+        path: "/body/body2",
+        component: {template:''}
+    },
 ];
 
 var router1 = new VueRouter({
@@ -75,7 +48,12 @@ var routersMap = {
     '':'../modules/header/header.vue',
     '/':'../modules/header/header.vue',
     '/home':'../modules/header/header.vue',
-    '/header':'../modules/header/header.vue'
+    '/header':'../modules/header/header.vue',
+    '/body':'../modules/body/body.vue',
+    '/body/body1':'../modules/body/body1/body1.vue',
+    '/body/body2':'../modules/body/body1/body2.vue',
+    // '/body/body2':'../modules/body/body1/body2.vue',
+    '/footer':'../modules/footer/footer.vue'
    /* '/project' : 'modules/project/nav.vue',
     '/project/task' : 'modules/project/task/task.vue',
     '/project/taskcreate' : 'modules/project/task/createtask.vue',

@@ -8,19 +8,16 @@
             <Step title="待进行"></Step>
         </Steps>
         <Page :total="100" show-sizer></Page>
-        <!--<gaea-steps :current="2" size="small">-->
-            <!--<gaea-step title="已完成"></gaea-step>-->
-            <!--<gaea-step title="进行中"></gaea-step>-->
-            <!--<gaea-step title="待进行"></gaea-step>-->
-            <!--<gaea-step title="待进行"></gaea-step>-->
-        <!--</gaea-steps>-->
+        <i-input v-model="value" placeholder="请输入..." style="width: 300px"></i-input>
     </div>
 
 </template>
 <script>
     module.exports = {
         data: function () {
-            return {}
+            return {
+                value:''
+            }
         },
         methods: {}
     };

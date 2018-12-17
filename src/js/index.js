@@ -5,7 +5,7 @@ var vm =  new Vue({
     watch: {},
     computed: {},
     mounted:function () {
-        router.push('/header');
+        router1.push('/body');
     },
 }).$mount('#app');
 
